@@ -1,0 +1,27 @@
+{{ define "main" }}
+{{ if eq .Type "blog" }}{{ if not .Params.menu }}
+<h1>{{ with .Title }}{{ . }}{{ else }}{{ .File.BaseFileName | humanize | title }}{{ end }}</h1>
+<p>
+  <i>
+    <time datetime='{{ .Date.Format "2006-01-02" }}' pubdate>
+      {{ .Date.Format (default "02 Jan, 2006" .Site.Params.dateFormat) }}
+    </time>
+  </i>
+</p>
+{{ end }}{{ end }}
+<p class="tagcloud">
+  {{ if ne (len $.Site.Taxonomies.tags) 0 }}
+    {{ $max := add (len (index $.Site.Taxonomies.tags.ByCount 0).Pages) 1 }}
+    {{ range $term := (.GetTerms "tags") }}
+      {{ $tagCount := len $term.Pages }}
+      {{ $tagClassId := div (mul $tagCount 8) $max }}
+      <a title="{{ $term.Name }} | {{ .Site.Title }}" class="tag tag-{{ $tagClassId }}" href="{{ $term.Permalink }}">
+        #{{ $term.Name }}
+      </a>
+    {{ end }}
+  {{ end }}
+</p>
+<content>
+  {{ .Content }}
+</content>
+{{ end }}

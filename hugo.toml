@@ -1,7 +1,7 @@
 baseURL = 'https://hamster2.top/'
 languageCode = 'es-419'
 title = 'Hamster Kombat'
-theme = "hugo-seo-theme"
+theme = "hamster"
 
 [params]
 description = "Descubre los secretos de Hamster Kombat: cómo usar códigos Morse en Telegram para obtener ventajas en el juego."
