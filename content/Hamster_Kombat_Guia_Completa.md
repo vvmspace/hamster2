@@ -1,4 +1,3 @@
-
 ---
 tags: ["Hamster Kombat", "guía de juegos", "juegos móviles", "estrategias de juego"]
 description: "Descubre cómo jugar Hamster Kombat, una popular y adictiva experiencia en Telegram, y aprende a maximizar tus ganancias dentro del juego."

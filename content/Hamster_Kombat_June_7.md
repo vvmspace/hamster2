@@ -1,5 +1,5 @@
 ---
-tags: ["Hamster Kombat", "Morse Code", "ETHEREUM", "Gaming", "ByBit"]
+tags: ["Hamster Kombat", "Morse Code", "ETHEREUM", "Gaming", "ByBit", "cifrado diario", "código Morse"]
 description: "Descubre cómo ingresar la palabra secreta en Hamster Kombat del 7 de junio y cómo superar los desafíos técnicos para obtener grandes recompensas."
 date: "2024-06-07T13:16:29.614111"
 title: "Nuevo Código Morse en Hamster Kombat: ¡Descubre la Palabra del 7 de Junio!"

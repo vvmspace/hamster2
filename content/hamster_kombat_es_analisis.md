@@ -1,4 +1,3 @@
-
 ---
 title: "¿Hamster Kombat es una Estafa? Análisis y Recomendaciones"
 date: 2024-06-07
