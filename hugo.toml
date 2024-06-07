@@ -5,4 +5,4 @@ theme = "hugo-seo-theme"
 
 [params]
 description = "Descubre los secretos de Hamster Kombat: cómo usar códigos Morse en Telegram para obtener ventajas en el juego."
-netlify_deployment_status_badge = "https://api.netlify.com/api/v1/badges/f14cc934-e719-431d-a8e1-705773172543/deploy-status"
+netlify_deployment_status_badge = "https://api.netlify.com/api/v1/badges/47c5327b-3882-482f-81c0-c21705c2c2b8/deploy-status"
