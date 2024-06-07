@@ -1,0 +1,3 @@
+[submodule "themes/hugo-seo-theme"]
+	path = themes/hugo-seo-theme
+	url = https://github.com/vvmspace/hugo-seo-theme.git

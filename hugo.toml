@@ -1,0 +1,8 @@
+baseURL = 'https://how2gpt.xyz/'
+languageCode = 'en-us'
+title = 'How to'
+theme = "hugo-seo-theme"
+
+[params]
+description = "GPT answers to the most common questions"
+netlify_deployment_status_badge = "https://api.netlify.com/api/v1/badges/f14cc934-e719-431d-a8e1-705773172543/deploy-status"
