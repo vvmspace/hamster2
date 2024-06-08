@@ -6,7 +6,7 @@
       {{ if $youtubeTag }}
       {{ $youtubeID := index $youtubeTag 0 | replaceRE "{{< youtube ([^ >]+) >}}" "${1}" }}
       <div class="youtube-video">
-        <iframe class="video" width="100%" height="400" src="http://www.youtube.com/embed/{{ $youtubeID }}" frameborder="0" allowfullscreen></iframe>
+        <iframe class="video" width="100%" height="400" src="//www.youtube.com/embed/{{ $youtubeID }}" frameborder="0" allowfullscreen></iframe>
       </div>
       {{ end }}
       <p>
