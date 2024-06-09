@@ -37,13 +37,13 @@ En las redes sociales oficiales, los desarrolladores del juego enviaron el sigui
 Traducido, el mensaje decía:
 
 ```
-📲 TAP THE EARN PER HOUR BUTTON THREE TIMESLOOK FOR THE CODE OF THE DAY
+📲 TAP THE EARN PER TAP BUTTON THREE TIMESLOOK FOR THE CODE OF THE DAY
 ```
 
 Traducido al español:
 
 ```
-📲 TOCA EL BOTÓN GANAR POR HORA TRES VECESBUSCA EL CÓDIGO DEL DÍA
+📲 TOCA EL BOTÓN GANAR POR TOQUE TRES VECESBUSCA EL CÓDIGO DEL DÍA
 ```
 
 De este mensaje, quedó claro que para recibir la recompensa era necesario realizar ciertas acciones.
