@@ -11,10 +11,10 @@
 {{ end }}{{ end }}
 <p class="tagcloud">
   <script type="text/javascript" src="https://cdnjs.buymeacoffee.com/1.0.0/button.prod.min.js" data-name="bmc-button" data-slug="hamster2" data-color="#FFDD00" data-emoji="🌵" data-font="Cookie" data-text="Buy me a coffee" data-outline-color="#000000" data-font-color="#000000" data-coffee-color="#ffffff" ></script>
-  <span class="tag tag-7 play" onclick="window.open('https://t.me/hamster_kombat_Bot/start?startapp=kentId280615376')" style="cursor: pointer;">
+  <span class="tag tag-7 play" onclick="play()" style="cursor: pointer;">
     🐹 Jugar
   </span>
-  <span class="tag tag-4 tg" onclick="window.open('https://t.me/hamster2top')" style="cursor: pointer;">
+  <span class="tag tag-4 tg" onclick="tg()" style="cursor: pointer;">
     🛩️ en Telegram
   </span>
   {{ if ne (len $.Site.Taxonomies.tags) 0 }}
