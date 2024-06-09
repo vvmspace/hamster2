@@ -23,6 +23,6 @@ El cifrado diario es WALLET
 2. Toque corto largo largo, toque corto largo, toque corto largo corto corto, toque corto largo corto corto, toque corto, toque largo
 
 
-// if you want to get it faster - buy me a coffee
-
 ## Si quieres obtenerlo más rápido, [cómprame un café](https://www.buymeacoffee.com/hamster2) ☕️
+
+Me dedico a esto de forma gratuita, pero puedo conseguirte el daily cipher más rápido si me compras un café. ¡Gracias! ☕️
