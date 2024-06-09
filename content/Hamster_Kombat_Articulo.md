@@ -3,6 +3,7 @@ title: "Hamster Kombat: El Fenómeno de los Cripto Juegos en Telegram"
 date: 2024-06-07
 tags: ["Hamster Kombat", "cripto juegos", "Telegram", "airdrop"]
 description: "Descubre Hamster Kombat, el nuevo juego clicker de cripto en Telegram que está revolucionando el mercado y atrayendo a millones de usuarios con su próximo airdrop en TON."
+versionB: true
 ---
 
 ### Hamster Kombat: El Fenómeno de los Cripto Juegos en Telegram

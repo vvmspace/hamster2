@@ -3,6 +3,7 @@ title: "Maestría en Airdrop Farming: Una Guía de Hamster Academy"
 date: 2024-06-08T00:16:00-05:00
 draft: false
 tags: ["Airdrop Farming", "Hamster Academy", "Criptomonedas", "YouTube"]
+versionB: true
 ---
 
 {{< youtube vJPGjGlqmoY >}}

@@ -14,6 +14,9 @@
   <span class="tag tag-7" onclick="window.open('https://t.me/hamster_kombat_Bot/start?startapp=kentId280615376')" style="cursor: pointer;">
     🐹 Jugar
   </span>
+  <span class="tag tag-4" onclick="window.open('https://t.me/hamster2top')" style="cursor: pointer;">
+    🛩️ en Telegram
+  </span>
   {{ if ne (len $.Site.Taxonomies.tags) 0 }}
     {{ $max := add (len (index $.Site.Taxonomies.tags.ByCount 0).Pages) 1 }}
     {{ range $term := (.GetTerms "tags") }}

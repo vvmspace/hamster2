@@ -1,7 +1,9 @@
+{{ $versionB := .Params.versionB | default false }}
+{{ $dailyCipher := cond $versionB "Daily cipher 9/10 de Junio:" "Cifrado diario 9/10 de Junio:" }}
 <a href="{{ "" | relURL }}" class="title">
   <h2 class="site-title">{{ .Site.Title }}</h2>
 </a>
 <nav>{{- partial "nav.html" . -}}</nav>
-<p><strong>Daily cipher 9/10 de Junio:</strong> WEB3</p>
+<p><strong>{{ $dailyCipher }} 9/10 de Junio:</strong> WEB3</p>
 <p><strong>Código Morse:</strong> .-- . -... ...-- (<a href="/hamster_kombat_daily_cipher/">Cómo Iniciar el Daily Cipher</a>)</p>
 <p><strong>Combo diario 9/10 de Junio:</strong> X (Pr&Team) Trading bots (Markets) DAO (Markets)</p>
