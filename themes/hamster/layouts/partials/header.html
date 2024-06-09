@@ -1,5 +1,5 @@
 {{ $versionB := .Params.versionB | default false }}
-{{ $dailyCipher := cond $versionB "Daily cipher 9/10 de Junio:" "Cifrado diario 9/10 de Junio:" }}
+{{ $dailyCipher := cond $versionB "Daily cipher" "Cifrado diario" }}
 <a href="{{ "" | relURL }}" class="title">
   <h2 class="site-title">{{ .Site.Title }}</h2>
 </a>
