@@ -1,13 +1,20 @@
 {{ define "main" }}
-  {{ range .Pages }}
+<div class="tagcloud">  <script type="text/javascript" src="https://cdnjs.buymeacoffee.com/1.0.0/button.prod.min.js" data-name="bmc-button" data-slug="hamster2" data-color="#FFDD00" data-emoji="🌵" data-font="Cookie" data-text="Buy me a coffee" data-outline-color="#000000" data-font-color="#000000" data-coffee-color="#ffffff" ></script>
+  <span class="tag tag-7" onclick="window.open('https://t.me/hamster_kombat_Bot/start?startapp=kentId280615376')" style="cursor: pointer;">
+    🐹 Jugar
+  </span></div>
+{{ range .Pages }}
     <div>
       <h2><a href="{{ .Permalink }}">{{ with .Title }}{{ . }}{{ else }}{{ .File.BaseFileName | humanize | title }}{{ end }}</a></h2>
       {{ $youtubeTag := findRE "{{< youtube [^>]+ >}}" .RawContent }}
       {{ if $youtubeTag }}
       {{ $youtubeID := index $youtubeTag 0 | replaceRE "{{< youtube ([^ >]+) >}}" "${1}" }}
       <div class="youtube-video">
-        <iframe class="video" width="100%" height="400" src="//www.youtube.com/embed/{{ $youtubeID }}" frameborder="0" allowfullscreen></iframe>
+        <iframe class="video" width="100%" loading="lazy" height="400" src="//www.youtube.com/embed/{{ $youtubeID }}" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
       </div>
+      <!-- <p>
+        <img loading="lazy" src="https://img.youtube.com/vi/{{ $youtubeID }}/maxresdefault.jpg" alt="{{ with .Title }}{{ . }}{{ else }}{{ .File.BaseFileName | humanize | title }}{{ end }}" />
+      </p> -->
       {{ end }}
       <p>
         {{ with .Description }}
