@@ -2,7 +2,7 @@
 title: "Daily cipher el código Morse: 7/8 de junio de 2024"
 date: 2024-06-08T00:00:00-05:00
 description: "Código Morse del cifrado diario"
-tags: ["código Morse", "Daily cipher", "8 de junio de 2024"]
+tags: ["código Morse", "Daily cipher", "8 de junio de 2024", "Cifrado diario"]
 ---
 
 # Daily cipher el código Morse: 7/8 de junio de 2024

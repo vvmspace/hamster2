@@ -2,10 +2,10 @@
 title: "Daily cipher el código Morse: 8/9 de junio de 2024"
 date: 2024-06-08T00:16:20-05:00
 description: "Código Morse del cifrado diario. La aplicación utiliza la versión americana del código Morse."
-tags: ["código Morse", "Daily cipher", "9 de junio de 2024"]
+tags: ["código Morse", "Daily cipher", "9 de junio de 2024", "Cifrado diario"]
 ---
 
-# Daily cipher el código Morse: 8/9 de junio de 2024
+# Cifrado diario el código Morse: 8/9 de junio de 2024
 
 ## Cifrado diario
 
