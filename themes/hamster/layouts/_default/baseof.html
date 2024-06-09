@@ -16,6 +16,38 @@
     gtag('js', new Date());
 
     gtag('config', 'G-W5LD2MXW23');
+    document.querySelectorAll('.play').forEach(item => {
+      console.log('item', item);
+      item.addEventListener('click', function() {
+        gtag('event', 'click', {
+          'event_category': 'Clicks',
+          'event_label': 'Click on play button',
+        });
+      });
+    });
+
+    document.querySelectorAll('.tg').forEach(item => {
+      console.log('item', item);
+      item.addEventListener('click', function() {
+        gtag('event', 'click', {
+          'event_category': 'Clicks',
+          'event_label': 'Click on Telegram button',
+        });
+      });
+    });
+
+    document.querySelectorAll('a').forEach(item => {
+      console.log('item', item);
+      item.addEventListener('click', function(e) {
+        e.preventDefault();
+        alert('Click on link: ' + e?.target.innerText);
+        gtag('event', 'click', {
+          'event_category': 'Clicks',
+          'event_label': 'Click on link: ' + e?.target.innerText,
+        });
+      });
+    });
+
   </script>
   {{- partial "seo_tags.html" . -}}
   <meta name="referrer" content="no-referrer-when-downgrade" />
