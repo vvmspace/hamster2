@@ -10,13 +10,17 @@ versionB: true
 
 El juego **Hamster Kombat** ha capturado la atención de miles de jugadores alrededor del mundo con su mezcla única de combates estratégicos y adorables hamsters guerreros. Uno de los aspectos más emocionantes y atractivos del juego es el **Daily Cipher**, una característica que añade un desafío adicional y recompensas especiales para los jugadores más dedicados.
 
+## 🔥 Cifrado Diario en Twitter:
+
+Sigue [@hamster2top](https://x.com/hamster2top) para obtener actualizaciones diarias sobre los códigos y desafíos del Daily Cipher.
+
 ## 🔥 Daily Cipher en Telegram:
 
 ¡Suscríbete al canal [@hamster2top](https://t.me/hamster2top) y sé el primero en enterarte de los nuevos códigos diarios!
 
 ### Nota Importante 🙏:
 
-Para mantener el tráfico del sitio web, los códigos en Telegram se publicarán con un ligero retraso.
+Para mantener el tráfico del sitio web, los códigos en Telegram y X se publicarán con un ligero retraso.
 Si no quieres esperar, visita el sitio web: hamster2.top.
 
 ## ¿Qué es el Cifrado Diario?
