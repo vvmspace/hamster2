@@ -41,6 +41,57 @@
         'value': 1
       });
     }
+
+    setTimeout(() => {
+      const countdowns = document.querySelectorAll('.countdown');
+      console.log(countdowns);
+
+      countdowns.forEach(countdown => {
+        setTimeout(() => {
+          console.log('setting up countdown');
+        }, 1000);
+        
+        // date from data-dateEnd attribute
+        const date = new Date(countdown.getAttribute('data-enddate'));
+        const now = new Date();
+
+        const diff = date.getTime() - now.getTime();
+
+        if (diff <= 0) {
+          countdown.textContent = countdown.getAttribute('data-endtext');
+          return;
+        }
+
+        const seconds = Math.floor(diff / 1000) % 60;
+        const minutes = Math.floor(diff / (1000 * 60)) % 60;
+        const hours = Math.floor(diff / (1000 * 60 * 60));
+
+        countdown.textContent = `${hours}:${minutes}:${seconds}`;
+
+        setInterval(() => {
+          // date from data-dateEnd attribute
+          const date = new Date(countdown.getAttribute('data-enddate'));
+          const now = new Date();
+
+          const diff = date.getTime() - now.getTime();
+
+          if (diff <= 0) {
+            countdown.textContent = countdown.getAttribute('data-endtext');
+            return;
+          }
+
+          const seconds = Math.floor(diff / 1000) % 60;
+          const minutes = Math.floor(diff / (1000 * 60)) % 60;
+          const hours = Math.floor(diff / (1000 * 60 * 60));
+
+          const ds = seconds < 10 ? `0${seconds}` : seconds;
+          const dm = minutes < 10 ? `0${minutes}` : minutes;
+          const dh = hours;
+
+          countdown.textContent = `${dh}:${dm}:${ds}`;
+        }, 1000);
+  });
+    }, 1000);
   </script>
   {{- partial "seo_tags.html" . -}}
   <meta name="referrer" content="no-referrer-when-downgrade" />

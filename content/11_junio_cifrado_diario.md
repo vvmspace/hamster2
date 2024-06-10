@@ -13,18 +13,18 @@ tags: ["código Morse", "Daily cipher", "11 de junio de 2024", "Cifrado diario",
 
 ## Daily cipher
 
-El cifrado diario es **???**
+El cifrado diario es **{{< countdown "2024-06-10T23:00:00+04:00" "Buy me a coffee" >}}**
 
 ## Código Morse del cifrado diario
 
 ```
-???
+{{< countdown "2024-06-10T23:00:00+04:00" "Buy me a coffee" >}}
 ```
 
 ## Cómo ingresar el código Morse en la página de inicio de la aplicación:
 
 1. Toque 3 veces "Ganar por toque" en la pantalla "Exchange"
-2. ???
+2. {{< countdown "2024-06-10T23:00:00+04:00" "Buy me a coffee" >}}
 
 ## Si quieres obtenerlo más rápido:
 
