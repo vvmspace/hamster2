@@ -11,7 +11,7 @@ tags: ["Hamster Kombat", "airdrop", "retirar dinero"]
 
 Este artículo está basado en fuentes oficiales de los desarrolladores, complementado con mi propia experiencia y comprensión del principio de funcionamiento de los airdrops y el lanzamiento de monedas, **pero no ofrece ninguna garantía**.
 
-Los desarrolladores de Hamster Kombat afirman que después de la cotización de la moneda, se producirá un airdrop de emisión primaria de monedas.
+Los desarrolladores de Hamster Kombat afirman que después de la listing de la moneda, se producirá un airdrop de emisión primaria de monedas.
 
 ## Cómo funciona un airdrop y cómo puede ocurrir en Hamster Kombat
 
