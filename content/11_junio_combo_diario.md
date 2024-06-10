@@ -1,5 +1,5 @@
 ---
-tags: ["críptomonedas", "ganar", "combinación diaria", "Earn"]
+tags: ["críptomonedas", "ganar", "combo diario", "Mine"]
 description: "Descubre cómo obtener 5.000.000 criptomonedas cada día siguiendo simples pasos en la sección Mine."
 date: 2024-06-10T12:00:00Z
 title: "Combo diario para el 10/11 de junio de 2024: ¡Consigue 5.000.000 criptomonedas!"
