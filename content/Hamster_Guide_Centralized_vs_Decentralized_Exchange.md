@@ -1,13 +1,13 @@
 ---
 tags: ["criptomonedas", "intercambio", "centralizado", "descentralizado", "seguridad", "Academia Hamster", "YouTube", "Exchange"]
 description: "Aprende las diferencias clave entre intercambios de criptomonedas centralizados y descentralizados, sus ventajas y desventajas, y cómo elegir la mejor plataforma para ti."
-date: "2024-06-10"
+date: "2024-06-08T00:16:00-05:00"
 title: "Guía del Hámster: Intercambio de Criptomonedas Centralizado vs Descentralizado"
 ---
 
 # Guía del Hámster: Intercambio de Criptomonedas Centralizado vs Descentralizado
 
-{{ youtube wytl-Pwfbio }}
+{{< youtube wytl-Pwfbio >}}
 
 ¡Hola, hámsters!
 
