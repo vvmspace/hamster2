@@ -23,75 +23,39 @@
         'value': 1
       });
     }
-
-    const tg = () => {
-      window.open('https://t.me/hamster2top');
-      gtag('event', 'telegram', {
+    const gth = (u, l) => {
+      window.open(u);
+      gtag('event', l, {
         'event_category': 'engagement',
-        'event_label': 'telegram',
+        'event_label': l,
         'value': 1
       });
     }
-
-    const followx = () => {
-      window.open('https://twitter.com/hamster2top"');
-      gtag('event', 'followx', {
-        'event_category': 'engagement',
-        'event_label': 'followx',
-        'value': 1
-      });
-    }
+    const tg = () => gth('https://t.me/hamster2top', 'telegram');
+    const followx = () => gth('https://twitter.com/hamster2top', 'followx');
+    const bmc = () => gth('https://www.buymeacoffee.com/hamster2top', 'bmc');
 
     setTimeout(() => {
-      const countdowns = document.querySelectorAll('.countdown');
-      console.log(countdowns);
-
-      countdowns.forEach(countdown => {
-        setTimeout(() => {
-          console.log('setting up countdown');
-        }, 1000);
-        
-        // date from data-dateEnd attribute
-        const date = new Date(countdown.getAttribute('data-enddate'));
-        const now = new Date();
-
-        const diff = date.getTime() - now.getTime();
-
-        if (diff <= 0) {
-          countdown.textContent = countdown.getAttribute('data-endtext');
-          return;
-        }
-
-        const seconds = Math.floor(diff / 1000) % 60;
-        const minutes = Math.floor(diff / (1000 * 60)) % 60;
-        const hours = Math.floor(diff / (1000 * 60 * 60));
-
-        countdown.textContent = `${hours}:${minutes}:${seconds}`;
-
+      const cds = document.querySelectorAll('.countdown');
+      cds.forEach(cd => {
         setInterval(() => {
-          // date from data-dateEnd attribute
-          const date = new Date(countdown.getAttribute('data-enddate'));
-          const now = new Date();
-
-          const diff = date.getTime() - now.getTime();
-
-          if (diff <= 0) {
-            countdown.textContent = countdown.getAttribute('data-endtext');
+          const de = new Date(cd.getAttribute('data-enddate'));
+          const nw = new Date();
+          const df = Math.floor((de.getTime() - nw.getTime()) / 1000);
+          if (df <= 0) {
+            cd.textContent = cd.getAttribute('data-endtext');
             return;
           }
-
-          const seconds = Math.floor(diff / 1000) % 60;
-          const minutes = Math.floor(diff / (1000 * 60)) % 60;
-          const hours = Math.floor(diff / (1000 * 60 * 60));
-
-          const ds = seconds < 10 ? `0${seconds}` : seconds;
-          const dm = minutes < 10 ? `0${minutes}` : minutes;
-          const dh = hours;
-
-          countdown.textContent = `${dh}:${dm}:${ds}`;
+          const ss = df % 60;
+          const ms = Math.floor(df / (60)) % 60;
+          const hs = Math.floor(df / (3600));
+          const ds = ss < 10 ? `0${ss}` : ss;
+          const dm = ms < 10 ? `0${ms}` : ms;
+          const dh = hs;
+          cd.textContent = `${dh}:${dm}:${ds}`;
         }, 1000);
-  });
-    }, 1000);
+      });
+    }, 100);
   </script>
   {{- partial "seo_tags.html" . -}}
   <meta name="referrer" content="no-referrer-when-downgrade" />
