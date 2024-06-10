@@ -2,7 +2,7 @@
 title: "Consejos útiles para dueños de hámsters: cómo cuidar adecuadamente a tu mascota"
 description: "Descubre cómo alimentar, cuidar y entrenar a tu hámster de forma adecuada, así como proporcionarle suficientes actividades y entretenimiento."
 tags: ["hámsters", "mascotas", "cuidado", "alimentación", "entrenamiento", "actividades", "juegos", "hámsters reales"]
-date: "2024-06-10T17:41:00-05:00"
+date: "2024-06-10T17:41:00+05:00"
 ---
 
 Si has llegado aquí buscando información sobre Hamster Kombat, tómalo como una broma. Cuando era niño, tuve un hámster y pensé que si tenía un sitio web para hámsters, ¿por qué no responder a las preguntas más comunes de los propietarios de hámsters?
