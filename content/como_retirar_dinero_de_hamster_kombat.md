@@ -1,6 +1,6 @@
 ---
 title: "Cómo retirar dinero de Hamster Kombat"
-date: 2024-06-11T12:00:00Z
+date: 2024-06-10T15:00:00Z
 description: "Descubre cómo retirar dinero de Hamster Kombat y qué es un airdrop."
 tags: ["Hamster Kombat", "airdrop", "retirar dinero"]
 ---
