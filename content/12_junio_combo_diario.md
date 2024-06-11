@@ -1,6 +1,6 @@
 ---
 title: "Combo diario para el 11/12 de junio de 2024"
-date: "2024-06-10T018:45:00+04:00"
+date: "2024-06-11T018:45:00+04:00"
 description: "Combo diario en Hamster Kombat. Encuentra y haz clic en 3 tarjetas específicas para recibir una recompensa de 5.000.000 de criptomonedas."
 tags: ["Combo diario", "12 de junio de 2024", "Hamster Kombat"]
 ---
