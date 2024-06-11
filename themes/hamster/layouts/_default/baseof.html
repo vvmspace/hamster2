@@ -60,20 +60,33 @@
     const isLucky = () => Math.random() > 0.75;
     const alreadyVisited = () => localStorage.getItem('alreadyVisited') === 'true';
     const setVisited = () => localStorage.setItem('alreadyVisited', 'true');
-    setTimeout(() => {
-      window.onclose = () => {
-        if (isLucky() && !alreadyVisited()) {
-          gtag('event', 'lucky', {
-            'event_category': 'engagement',
-            'event_label': 'lucky',
-            'value': 1
-          });
-          alert('Más actualizaciones en nuestro Telegram. Ya no le mostraremos este mensaje.');
-          tg();
-        }
-        setVisited();
+    
+    if (alreadyVisited()) {
+      gtag('event', 'visited', {
+        'event_category': 'engagement',
+        'event_label': 'visited',
+        'value': 1
+      });
+    }
+    let scrolled = false;
+    window.onscroll = () => {
+      if (!scrolled) {
+        scrolled = true;
+        setTimeout(() => {
+          if (isLucky() && !alreadyVisited()) {
+            gtag('event', 'lucky', {
+              'event_category': 'engagement',
+              'event_label': 'lucky',
+              'value': 1
+            });
+            alert('Más actualizaciones en nuestro Telegram. Ya no le mostraremos este mensaje.');
+            tg();
+          }
+          setVisited();
+        }, 30000);
       }
-    }, 30000);
+
+    }
   </script>
   {{- partial "seo_tags.html" . -}}
   <meta name="referrer" content="no-referrer-when-downgrade" />
