@@ -17,4 +17,4 @@ La combinación diaria en la sección **Mine** consiste en encontrar y hacer cli
 
 ## Combo diario en Telegram
 
-Sigue [@hamster2top](https://t.me/hamster2top/).
+Sigue [@hamster2top](https://t.me/hamster2top/) y [@ton_saudamerica](https://t.me/ton_saudamerica/) en Telegram para obtener los combos diarios y TON noticias más rápido.
