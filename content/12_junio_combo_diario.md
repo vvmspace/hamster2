@@ -14,6 +14,8 @@ HamsterGram
 Specials:
 Hamster Kombat merch
 
+{{< donate >}}
+
 ## ¿Qué es el combo diario en Hamster Kombat?
 
 El combo diario en la sección Mine consiste en encontrar y hacer clic en 3 tarjetas específicas que se actualizan todos los días a las 12:00 UTC. Al completar esta simple tarea, recibirás una recompensa de 5.000.000 de criptomonedas.

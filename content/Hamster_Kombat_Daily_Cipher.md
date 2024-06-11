@@ -10,6 +10,8 @@ versionB: true
 
 Cada día, el cifrado diario se publica en la parte superior del sitio web, así como en [Telegram](https://t.me/hamster2top) y [X](https://x.com/hamster2top). También tenemos [un chat](https://t.me/hamster2chat) donde puedes compartir el cifrado diario y discutirlo.
 
+{{< donate >}}
+
 El juego **Hamster Kombat** ha capturado la atención de miles de jugadores alrededor del mundo con su mezcla única de combates estratégicos y adorables hamsters guerreros. Uno de los aspectos más emocionantes y atractivos del juego es el **Daily Cipher**, una característica que añade un desafío adicional y recompensas especiales para los jugadores más dedicados.
 
 ## 🔥 Daily Cipher en Telegram:
