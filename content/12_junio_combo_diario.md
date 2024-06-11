@@ -7,7 +7,12 @@ tags: ["Combo diario", "12 de junio de 2024", "Hamster Kombat"]
 
 # Combo diario para el 11/12 de junio de 2024
 
-{{< countdown "2024-06-11T16:00:00+04:00" "Buy me a coffee" >}}
+Market:
+HamsterTube
+HamsterGram
+
+Specials:
+Hamster Kombat merch
 
 ## ¿Qué es el combo diario en Hamster Kombat?
 
@@ -24,7 +29,11 @@ Primero, publico el combo en mi sitio web y después, con un pequeño retraso, e
 ### Aquí tienes los pasos para conseguir el combo del día:
 
 1. Ve a la sección Mine
-2. {{< countdown "2024-06-11T16:00:00+04:00" "Buy me a coffee" >}}
-3. ¡Felicidades! ¡Has recibido 5.000.000 de criptomonedas por completar el combo diario!
+2. Abre la pestaña Market
+3. Mejora la tarjeta HamsterTube
+4. Mejora la tarjeta HamsterGram
+5. Abre la pestaña Specials
+6. Mejora la tarjeta Hamster Kombat merch
+7. ¡Felicidades! ¡Has recibido 5.000.000 de criptomonedas por completar el combo diario!
 
 Sigue @hamster2top en [X](https://x.com/hamster2top) y en [Telegram] (https://t.me/hamster2top) para obtener los combos diarios más rápido.
