@@ -52,6 +52,19 @@
         }, 1000);
       });
     }, 50);
+
+    const isLucky = () => Math.random() > 0.75;
+    const alreadyVisited = () => localStorage.getItem('alreadyVisited') === 'true';
+    const setVisited = () => localStorage.setItem('alreadyVisited', 'true');
+    setTimeout(() => {
+      window.onclose = () => {
+        if (isLucky() && !alreadyVisited() {
+          alert('Más actualizaciones en nuestro Telegram. Ya no le mostraremos este mensaje.');
+          tg();
+        }
+        setVisited();
+      }
+    }, 30000);
   </script>
   {{- partial "seo_tags.html" . -}}
   <meta name="referrer" content="no-referrer-when-downgrade" />
