@@ -4,6 +4,7 @@ date: "2024-06-12T00:18:20+04:00"
 description: "Cifrado diario en Hamster Kombat. Vamos a descifrar el código Morse y adivinar la palabra."
 tags: ["código Morse", "Daily cipher", "12 de junio de 2024", "Cifrado diario", "Hamster Kombat"]
 versionB: true
+languageCode: "es-AR"
 ---
 # Cifrado diario 11/12 de junio de 2024 en Hamster Kombat
 
