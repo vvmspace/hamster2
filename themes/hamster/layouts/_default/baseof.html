@@ -25,13 +25,15 @@
       });
     }
 
+    const versionB = Math.random() > 0.5;
+
     const play = () => gth('https://t.me/hamster_kombat_Bot/start?startapp=kentId280615376', 'play');
-    const tg = () => gth(Math.random() > 0.75 ? 'https://t.me/hamster2top?boost' : 'https://t.me/hamster2top', 'telegram');
+    const tg = () => gth(versionB ? 'https://t.me/hamster2top?boost' : 'https://t.me/hamster2top', versionB ? 'telegram_boost' : 'telegram');
     const tg_chat = () => gth('https://t.me/hamster2chat', 'telegram_chat');
     const followx = () => gth('https://twitter.com/hamster2top', 'followx');
     const bmc = () => gth('https://www.buymeacoffee.com/hamster2top', 'bmc');
     const smsa = () => gth('https://sms-activate.org/?ref=10360304', 'smsa');
-    const maincard = () => gth('https://t.me/maincardton_bot/start?startapp=ref_NWNXW5', 'maincard');
+    const maincard = () => gth(versionB ? 'https://t.me/maincardton_bot/start?startapp=ref_NWNXW5' : 'https://t.me/ton_sudamerica', versionB ? 'maincard' : 'ton_sudamerica');
 
     setTimeout(() => {
       const cds = document.querySelectorAll('.countdown');
