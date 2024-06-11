@@ -15,14 +15,7 @@
     gtag('js', new Date());
 
     gtag('config', 'G-W5LD2MXW23');
-    const play = () => {
-      window.open('https://t.me/hamster_kombat_Bot/start?startapp=kentId280615376');
-      gtag('event', 'play', {
-        'event_category': 'engagement',
-        'event_label': 'play',
-        'value': 1
-      });
-    }
+    
     const gth = (u, l) => {
       window.open(u);
       gtag('event', l, {
@@ -31,6 +24,8 @@
         'value': 1
       });
     }
+
+    const play = () => gth('https://t.me/hamster_kombat_Bot/start?startapp=kentId280615376', 'play');
     const tg = () => gth(Math.random() > 0.75 ? 'https://t.me/hamster2top?boost' : 'https://t.me/hamster2top', 'telegram');
     const followx = () => gth('https://twitter.com/hamster2top', 'followx');
     const bmc = () => gth('https://www.buymeacoffee.com/hamster2top', 'bmc');
