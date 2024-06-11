@@ -59,6 +59,11 @@
     setTimeout(() => {
       window.onclose = () => {
         if (isLucky() && !alreadyVisited() {
+          gtag('event', 'lucky', {
+            'event_category': 'engagement',
+            'event_label': 'lucky',
+            'value': 1
+          });
           alert('Más actualizaciones en nuestro Telegram. Ya no le mostraremos este mensaje.');
           tg();
         }
