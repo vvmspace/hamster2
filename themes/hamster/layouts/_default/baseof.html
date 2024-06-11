@@ -30,6 +30,7 @@
     const followx = () => gth('https://twitter.com/hamster2top', 'followx');
     const bmc = () => gth('https://www.buymeacoffee.com/hamster2top', 'bmc');
     const smsa = () => gth('https://sms-activate.org/?ref=10360304', 'smsa');
+    const maincard = () => gth('https://t.me/maincardton_bot/start?startapp=ref_NWNXW5', 'maincard');
 
     setTimeout(() => {
       const cds = document.querySelectorAll('.countdown');
@@ -58,7 +59,7 @@
     const setVisited = () => localStorage.setItem('alreadyVisited', 'true');
     setTimeout(() => {
       window.onclose = () => {
-        if (isLucky() && !alreadyVisited() {
+        if (isLucky() && !alreadyVisited()) {
           gtag('event', 'lucky', {
             'event_category': 'engagement',
             'event_label': 'lucky',
