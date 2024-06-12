@@ -7,9 +7,7 @@ description: "Descubre cómo obtener 5.000.000 criptomonedas."
 
 # Combo diario para el 12/13 de junio de 2024
 
-{{< countdown "2024-06-12T12:00:00Z" "Donate por favor">}}
-
-{{< donate >}}
+<img src="/combo12.jpeg" alt="Combo diario" style="max-width: 100%; height: auto;" style="cursor: pointer;" />
 
 ## ¿Qué es la combinación diaria?
 
