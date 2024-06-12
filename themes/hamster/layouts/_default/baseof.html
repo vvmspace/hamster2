@@ -25,7 +25,7 @@
       });
     }
 
-    const versionB = Math.random() > 0.5;
+    const versionB = Math.random() > 0.80;
 
     const play = () => gth('https://t.me/hamster_kombat_Bot/start?startapp=kentId280615376', 'play');
     const tg = () => gth(versionB ? 'https://t.me/hamster2top?boost' : 'https://t.me/hamster2top', versionB ? 'telegram_boost' : 'telegram');
@@ -100,10 +100,6 @@
   {{ if .Params.math }}
     {{ partialCached "math.html" . }}
   {{ end }}
-
-  <!-- A partial to be overwritten by the user.
-  Simply place a custom_head.html into
-  your local /layouts/partials-directory -->
   {{- partial "custom_head.html" . -}}
 </head>
 
