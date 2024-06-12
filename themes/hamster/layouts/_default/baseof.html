@@ -43,7 +43,7 @@
           const nw = new Date();
           const df = Math.floor((de.getTime() - nw.getTime()) / 1000);
           if (df <= 0) {
-            cd.textContent = cd.getAttribute('data-endtext');
+            cd.innerHTML = cd.getAttribute('data-endtext');
             return;
           }
           const ss = df % 60;
