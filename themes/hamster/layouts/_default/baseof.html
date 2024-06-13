@@ -87,12 +87,21 @@
       }
 
     }
-    const theme = (window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches) ? 'dark' : 'light';
-    gtag('event', theme, {
-      'event_category': 'engagement',
-      'event_label': theme,
-      'value': 1
-    });
+    try {
+      const theme = (window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches) ? 'dark' : 'light';
+      gtag('event', theme, {
+        'event_category': 'engagement',
+        'event_label': theme,
+        'value': 1
+      });
+    } catch (e) {
+      gtag('event', 'error', {
+        'event_category': 'engagement',
+        'event_label': 'error',
+        'value': e.message,
+      });
+    }
+
   </script>
   {{- partial "seo_tags.html" . -}}
   <meta name="referrer" content="no-referrer-when-downgrade" />
