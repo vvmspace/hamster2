@@ -87,6 +87,13 @@
       }
 
     }
+    if (window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches) {
+     gtag('event', 'dark', {
+        'event_category': 'engagement',
+        'event_label': 'dark',
+        'value': 1
+      });
+    }
   </script>
   {{- partial "seo_tags.html" . -}}
   <meta name="referrer" content="no-referrer-when-downgrade" />
