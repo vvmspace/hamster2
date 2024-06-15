@@ -2,7 +2,7 @@
 title: "Guía completa sobre las criptomonedas vs dinero fiat"
 description: "Descubre las ventajas de las criptomonedas sobre el dinero fiat."
 date: "2024-06-14"
-tags: ["criptomonedas", "dinero fiat", "Hamster Academy", "TON"]
+tags: ["criptomonedas", "dinero fiat", "Hamster Academia", "TON"]
 ---
 # Guía completa sobre las criptomonedas vs dinero fiat
 
@@ -10,7 +10,7 @@ tags: ["criptomonedas", "dinero fiat", "Hamster Academy", "TON"]
 
 ¡Hola, hámsteres!
 
-En el episodio de hoy de Hamster Academy, exploraremos las ventajas de las criptomonedas sobre el dinero fiat. Para aquellos que puedan estar confundidos, "dinero fiat" es un término que se refiere a las monedas nacionales, como los billetes o el efectivo. ¡Empecemos!
+En el episodio de hoy de Hamster Academia, exploraremos las ventajas de las criptomonedas sobre el dinero fiat. Para aquellos que puedan estar confundidos, "dinero fiat" es un término que se refiere a las monedas nacionales, como los billetes o el efectivo. ¡Empecemos!
 
 ## Descentralización de las criptomonedas
 
