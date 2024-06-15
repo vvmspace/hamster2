@@ -3,9 +3,10 @@ title: "Guía completa sobre las criptomonedas vs dinero fiat"
 description: "Descubre las ventajas de las criptomonedas sobre el dinero fiat."
 date: "2024-06-14"
 tags: ["criptomonedas", "dinero fiat", "Hamster Academy", "TON"]
+---
 # Guía completa sobre las criptomonedas vs dinero fiat
 
-## Introducción
+{{< youtube PQK1o1IZoP4 >}}
 
 ¡Hola, hámsteres!
 
