@@ -1,7 +1,41 @@
 <!-- Primary Meta Tags -->
-<meta name="title" content="{{ with .Title }}{{ . }}{{ else }}{{ .Site.Title }}{{ end }}" />
-<meta name="description" content="{{ if .IsHome }}{{ with .Site.Params.description }}{{ . }}{{ else }}{{ .Site.Title }}{{ end }}{{ else }}{{ with .Description }}{{ . }}{{ else }}{{ .Summary }}{{ end }}{{ end }}" />
-<meta name="keywords" content="{{ if .IsPage}}{{ range $index, $tag := .Params.tags }}{{ $tag }},{{ end }}{{ else }}{{ range $plural, $terms := .Site.Taxonomies }}{{ range $term, $val := $terms }}{{ printf "%s," $term }}{{ end }}{{ end }}{{ end }}" />
+
+{{/* Получаем дату из partial "date.html" и сохраняем в переменную $date */}}
+{{ $date := partial "date.html" . }}
+
+{{/* Инициализируем переменные для title и description */}}
+{{ $titleContent := "" }}
+{{ $descriptionContent := "" }}
+
+{{ if .IsHome }}
+{{/* Если это главная страница */}}
+{{ $titleContent = printf "Hámster Kombat %s: Combo diario, Minijuego, Cifrado diario" $date }}
+{{ $descriptionContent = printf "%s %s" $date (or .Site.Params.description "") }}
+{{ else }}
+{{/* Для остальных страниц */}}
+{{ $titleContent = or .Title .Site.Title }}
+{{ $descriptionContent = or .Description .Summary }}
+{{ end }}
+
+{{/* Формируем keywords */}}
+{{ $keywords := "" }}
+{{ if .IsPage }}
+{{ with .Params.tags }}
+{{ $keywords = delimit . ", " }}
+{{ end }}
+{{ else }}
+{{ $allTerms := slice }}
+{{ range $plural, $terms := .Site.Taxonomies }}
+{{ range $term, $val := $terms }}
+{{ $allTerms = $allTerms | append $term }}
+{{ end }}
+{{ end }}
+{{ $keywords = delimit $allTerms ", " }}
+{{ end }}
+
+<meta name="title" content="{{ $titleContent }}" />
+<meta name="description" content="{{ $descriptionContent }}" />
+<meta name="keywords" content="{{ $keywords }}" />
 
 <!-- Open Graph / Facebook -->
 {{ template "_internal/opengraph.html" . }}

@@ -1,0 +1,19 @@
+{{ $day := now.Format "2" }}
+{{ $nextDay := (now.AddDate 0 0 1).Format "2" }}
+{{ $month := now.Format "January" }}
+{{ $monthEs := "" }}
+
+{{ if eq $month "January" }}{{ $monthEs = "enero" }}{{ end }}
+{{ if eq $month "February" }}{{ $monthEs = "febrero" }}{{ end }}
+{{ if eq $month "March" }}{{ $monthEs = "marzo" }}{{ end }}
+{{ if eq $month "April" }}{{ $monthEs = "abril" }}{{ end }}
+{{ if eq $month "May" }}{{ $monthEs = "mayo" }}{{ end }}
+{{ if eq $month "June" }}{{ $monthEs = "junio" }}{{ end }}
+{{ if eq $month "July" }}{{ $monthEs = "julio" }}{{ end }}
+{{ if eq $month "August" }}{{ $monthEs = "agosto" }}{{ end }}
+{{ if eq $month "September" }}{{ $monthEs = "septiembre" }}{{ end }}
+{{ if eq $month "October" }}{{ $monthEs = "octubre" }}{{ end }}
+{{ if eq $month "November" }}{{ $monthEs = "noviembre" }}{{ end }}
+{{ if eq $month "December" }}{{ $monthEs = "diciembre" }}{{ end }}
+
+{{ printf "%s y %s de %s" $day $nextDay $monthEs }}
