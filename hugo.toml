@@ -1,9 +1,9 @@
 baseURL = 'https://hamster2.top/'
-languageCode = 'es-AR'
+languageCode = 'es-419'
 title = 'Hamster Kombat'
 theme = "hamster"
 
 [params]
-description = "Hamster Kombat, 23/24 de Junio: Combo diario, cifrado de hoy, morse, guía de airdrops, guía de inicio y mucho más."
+description = "Hamster Kombat: combo diario, cifrado diario y código Morse actualizados cada día. Guías y airdrops en TON."
 netlify_deployment_status_badge = "https://api.netlify.com/api/v1/badges/47c5327b-3882-482f-81c0-c21705c2c2b8/deploy-status"
 hideMadeWithLine = true
