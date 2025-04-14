@@ -4,6 +4,6 @@ title = 'Hamster Kombat'
 theme = "hamster"
 
 [params]
-description = "Hamster Kombat postmortem: crypto TON ETH NEAR BTC XMR USDT"
+description = "Hamster Kombat postmortem: crypto exchange guides TON ETH NEAR BTC XMR USDT"
 netlify_deployment_status_badge = "https://api.netlify.com/api/v1/badges/47c5327b-3882-482f-81c0-c21705c2c2b8/deploy-status"
-hideMadeWithLine = true
+hideMadeWithLine = false
