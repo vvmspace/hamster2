@@ -1,44 +1,45 @@
 {{ define "main" }}
 <div class="tagcloud">
-  <span class="bmc-btn" onclick="bmc()">🌵&nbsp;Buy me a coffee</span>
   <span class="tag tag-7 play" onclick="play()" style="cursor: pointer;">
     🐹 Jugar
-  </span></div>
+  </span>
+</div>
 <h1>{{ .Title }}</h1>
-  {{ range .Pages }}
-    <div>
-      <h2><a href="{{ .Permalink }}">{{ with .Title }}{{ . }}{{ else }}{{ .File.BaseFileName | humanize | title }}{{ end }}</a></h2>
-      {{ $youtubeTag := findRE "{{< youtube [^>]+ >}}" .RawContent }}
-      {{ if $youtubeTag }}
-      {{ $youtubeID := index $youtubeTag 0 | replaceRE "{{< youtube ([^ >]+) >}}" "${1}" }}
+{{ range .Pages }}
+<div>
+  <h2><a href="{{ .Permalink }}">{{ with .Title }}{{ . }}{{ else }}{{ .File.BaseFileName | humanize | title }}{{ end
+      }}</a></h2>
+  {{ $youtubeTag := findRE "{{< youtube [^>]+ >}}" .RawContent }}
+    {{ if $youtubeTag }}
+    {{ $youtubeID := index $youtubeTag 0 | replaceRE "{{< youtube ([^>]+) >}}" "${1}" }}
       <div class="youtube-video">
-        <iframe class="video" width="100%" height="400" loading="lazy" src="//www.youtube.com/embed/{{ $youtubeID }}" frameborder="0" allowfullscreen></iframe>
+        <iframe class="video" width="100%" height="400" loading="lazy" src="//www.youtube.com/embed/{{ $youtubeID }}"
+          frameborder="0" allowfullscreen></iframe>
       </div>
       {{ end }}
       <p>
         {{ with .Description }}
-          {{ . | safeHTML }}
+        {{ . | safeHTML }}
         {{ else }}
-          {{ (index (split .Summary "\n") 0) | safeHTML }}
+        {{ (index (split .Summary "\n") 0) | safeHTML }}
         {{ end }}
       </p>
-    </div>
+</div>
+{{ end }}
+<div class="container tagcloud">
+  {{ if ne (len $.Site.Taxonomies.tags) 0 }}
+  {{ $max := add (len (index $.Site.Taxonomies.tags.ByCount 0).Pages) 1 }}
+  {{ $show := div $max 3 }}
+  {{ range $name, $taxonomy := $.Site.Taxonomies.tags }}
+  {{ $tagCount := len $taxonomy.Pages }}
+  {{ if gt $tagCount $show }}
+  {{ $tagClassId := div (mul $tagCount 8) $max }}
+  <a class="tag tag-{{ $tagClassId }}" href="{{ " /tags/" | relURL }}{{ $name | urlize }}" class="tagcloud-item">
+    #{{ $name }}</sup>
+  </a>
   {{ end }}
-  <div class="container tagcloud">
-    {{ if ne (len $.Site.Taxonomies.tags) 0 }}
-      {{ $max := add (len (index $.Site.Taxonomies.tags.ByCount 0).Pages) 1 }}
-      {{ $show := div $max 3 }}
-        {{ range $name, $taxonomy := $.Site.Taxonomies.tags }}
-          {{ $tagCount := len $taxonomy.Pages }}
-            {{ if gt $tagCount $show }}
-            {{ $tagClassId := div (mul $tagCount 8) $max }}
-            <a class="tag tag-{{ $tagClassId }}" href="{{ "/tags/" | relURL }}{{ $name | urlize }}" 
-            class="tagcloud-item">
-              #{{ $name }}</sup>
-            </a>
-            {{ end }}
-        {{ end }}
-    {{ end }}
+  {{ end }}
+  {{ end }}
 </div>
 
 {{ end }}

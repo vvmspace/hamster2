@@ -6,16 +6,17 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   {{- partial "favicon.html" . -}}
-  <title>{{- block "title" . }}{{ with .Title }}{{ . }} | {{ end }}Hámster Kombat {{- partial "date.html" -}}: Combo diario, Minujuego, Cifrado diario{{- end }}</title>
+  <title>{{- block "title" . }}{{ with .Title }}{{ . }} | {{ end }}Hámster Kombat {{- partial "date.html" -}}: Combo
+    diario, Minujuego, Cifrado diario{{- end }}</title>
   <meta name="google-site-verification" content="eEvJTmiHOcaPyzr-JhlcTV9muuve2qQT5zqKWPYEImQ" />
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-W5LD2MXW23"></script>
   <script>
     window.dataLayer = window.dataLayer || [];
-    function gtag(){dataLayer.push(arguments);}
+    function gtag() { dataLayer.push(arguments); }
     gtag('js', new Date());
 
     gtag('config', 'G-W5LD2MXW23');
-    
+
     const gth = (u, l) => {
       window.open(u);
       gtag('event', l, {
@@ -32,14 +33,13 @@
     const tg_chat = () => gth('https://t.me/hamster2chat', 'telegram_chat');
     const ton_sudamerica = () => gth('https://t.me/ton_sudamerica', 'ton_sudamerica');
     const followx = () => gth('https://twitter.com/hamster2top', 'followx');
-    const bmc = () => gth('https://donorbox.org/hamster-kombat-daily-cipher-nad-daily-combar', 'bmc');
     const smsa = () => gth('https://sms-activate.org/?ref=10360304', 'smsa');
     const maincard = () => gth(versionB ? 'https://t.me/maincardton_bot/start?startapp=ref_NWNXW5' : 'https://t.me/ton_sudamerica', versionB ? 'maincard' : 'ton_sudamerica');
     const pixeltap = () => gth('https://t.me/pixelversexyzbot?start=280615376', 'pixeltap');
     const bybit = () => gth('https://www.bybit.com/invite?ref=KJABMBO', 'bybit');
     const koth = () => gth('https://t.me/KingOfTheHillGameBot?start=1188566885', 'koth');
     const not = () => gth('https://t.me/notcoin_bot?start=er_13837239', 'not');
-    
+
     setTimeout(() => {
       const cds = document.querySelectorAll('.countdown');
       cds.forEach(cd => {
@@ -65,7 +65,7 @@
     const isLucky = () => Math.random() > 0.75;
     const alreadyVisited = () => localStorage.getItem('alreadyVisited') === 'true';
     const setVisited = () => localStorage.setItem('alreadyVisited', 'true');
-    
+
     if (alreadyVisited()) {
       gtag('event', 'visited', {
         'event_category': 'engagement',
@@ -105,20 +105,21 @@
         }, 30000);
       }
     }
-    
+
 
   </script>
   {{- partial "seo_tags.html" . -}}
   <meta name="referrer" content="no-referrer-when-downgrade" />
 
   {{ with .OutputFormats.Get "rss" -}}
-  {{ printf `<link rel="%s" type="%s" href="%s" title="%s" />` .Rel .MediaType.Type .Permalink $.Site.Title | safeHTML }}
+  {{ printf `
+  <link rel="%s" type="%s" href="%s" title="%s" />` .Rel .MediaType.Type .Permalink $.Site.Title | safeHTML }}
   {{ end -}}
 
   {{- partial "style.html" . -}}
 
   {{ if .Params.math }}
-    {{ partialCached "math.html" . }}
+  {{ partialCached "math.html" . }}
   {{ end }}
   {{- partial "custom_head.html" . -}}
 </head>
