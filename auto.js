@@ -65,7 +65,7 @@ function buildComboPartial({ dailyComboDate, dailyComboImage, cipherWord }) {
 
   if (dailyComboImage) {
     lines.push(
-      `<div><img loading="lazy" src="${escapeAttr(dailyComboImage)}" alt="Daily Combo" /></div>`,
+      `<div><img loading="lazy" class="combo-image" src="${escapeAttr(dailyComboImage)}" alt="Daily Combo" width="1080" height="429" /></div>`,
     );
   }
 
